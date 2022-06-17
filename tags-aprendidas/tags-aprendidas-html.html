@@ -1,0 +1,335 @@
+
+INDENTAÇÂO
+É o espaço dado pelo tab na página
+
+<!--Títulos-->
+<H1></H1> / <h2></h2> / <h3></h3> / <h4></h4> / <h5></h5> / <h6></h6>
+
+<!--Parágrafo-->
+<p></p>
+
+<!--Span, para modificar uma parte específica do texto-->
+<span></span>
+
+<!--negrito (bold)-->
+<b>negrito (bold)</b>
+
+<!--itálico (Italic)-->
+<i>itálico (Italic)</i>
+<em>Italic</em> com Semântica
+
+<!--Sublinhado (underlined)-->
+<u>Sublinhado (underlined)</u>
+
+<!--Negrito, mas nesse o navegador vai dar enfase, em um leitor de tela, esse trecho vai ser lido com mais enfase-->
+<strong>Negrito, mas nesse o navegador vai dar enfase, em um leitor de tela, esse trecho vai ser lido com mais enfase</strong>
+
+<!--itálico só que lido com enfase pelo navegador (emphasized)-->
+<em>itálico só que lido com enfase pelo navegador (emphasized)</em>
+
+<!--"citação"-"citar" (quote)-->
+<q>"citação" "citar" (quote)</q>
+
+<!-- Deixa p texto menor que o padrão -->
+<small>Fica menor que o padrão</small>
+
+<!-- risca o texto -->
+<del>Risca o texto (como se fosse deletado)</del>
+
+<!-- marca o texto -->
+<mark>Usa um "marcatexto"</mark>
+
+<!-- eleva o elemento -->
+<sup>sobe o elemento</sup>
+
+<!-- desce o elemento -->
+<sub>desce o elemento</sub>
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+<!--LISTA-->
+
+<!--unordered list-->
+<ul>Unordered list
+  <li>List item</li>
+</ul>
+
+<!--Ordered list-->
+<ol>Ordered list
+  <li>list item</li>
+</ol>
+
+<!--  -->
+DESCRIPTION LISTS (Description lists)
+<dl>tag defines the description list
+  <dt>tag defines the term (name)</dt>
+  <dd>tag describes each term</dd>
+</dl>
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+IMG
+<img src="src - Specifies the path to the image" alt="alt - Specifies an alternate text for the image">
+pode ter o width; height e style
+definindo só width, o navegador deixa proporcional
+e usando style, impede que o css mude o atributo
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Vídeo
+<video src="src - Specifies the path to the image">Aqui aparece um texto se o vídeo não carregar</video>
+<video src="" controls muted loop autoplay width="" height="">
+  <source src="" type="video/mp4">
+</video>
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+audio:
+<audio src=""></audio>
+<audio controls loop preload muted autoplay>
+  <source src="" type="audio/mpeg">
+</audio>
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+HTML Block and Inline Elements
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Semantic Elements in HTML
+
+<header></header>
+<figure></figure>
+<nav></nav>
+<main></main>
+<code></code>
+<abbr title=""></abbr>  <dfn></dfn>
+<footer></footer>
+<section></section>
+<article></article>
+<aside></aside>
+<figcaption></figcaption>
+<address></address>
+<dialog open=""></dialog>
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+favicon
+<link rel="icon" type="image/x-icon" href="lugar onde esta o icon">
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+<a href=""></a>
+pode ser usada como âncoras:
+1. para um id
+2. para outra página
+3. para um id em outra página
+4. para mandar um email
+  - usa: mailto:
+5. para ligar
+  - usa: tel:
+Atributos para o "a":
+Target:_blank;(Abrir em outra aba)/_self(na mesma aba)
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<base href="">
+encurtador de URLs
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+<hr>
+coloca uma linha horizontalmente na página
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Tags Globais:
+class
+contenteditable
+data-*
+hidden
+id
+tabindex
+title
+style
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+TABLE
+<table>
+  <tr> <!--Table Rows-->
+    <td></td> <!--Table Data-->
+  </tr>
+</table>
+
+para juntar duas linhas:
+rowspan="Número de linhas para juntar"
+
+para juntar duas células:
+colspan="Número de linhas para juntar"
+
+<th></th> <!--Table Header, substitui the table data-->
+
+<caption></caption>
+coloca uma título/subtítulo na tabela
+(Caption-side:top ou bottom;)
+
+Semântica para tabelas:
+<thead></thead>
+<tbody></tbody>
+<tfoot></tfoot>
+
+empty-cells: hide; --> esconder células vazias
+
+tbody tr:nth-child(even)
+as tags filhas de tr no tbody (par e odd:ímpar)
+
+tbody tr:hover
+quando o mouse estiver sobre a tr do tbody vai receber algo
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+FORMS:
+<form action="" method="">
+
+</form>
+
+Atributos para o "form": -action="lugar para onde as informações vão ser enviadas"
+-methot="GET e POST"
+  GET: joga na URL
+  POST: as informações são enviadas de forma interna
+
+  <Form>
+    <input type="text">
+  </Form>
+
+  <input type="text"> (campo de texto) {
+    <input type="email"> (variação do text, mas formata o texto em forma de email, só aceita email)
+  }
+  <input type="password"> (campo de senha)
+  <input type="checkbox"> (checkbox)
+  <input type="radio" name=""> radios com mesmo nome se desmarcam, radios com nomes diferentes ficam marcados
+  <input type="submit"> (botão de enviar o form)
+  
+  atributo NAME (como referência quando os dados são enviados.
+  Observe que cada campo de entrada deve ter um atributo 'name' a ser enviado.
+  Se o atributo 'name' for omitido, o valor do campo de entrada não será enviado.)
+  atributo VALUE (texto que vai aparecer no botão "ele vem "preenchido"")
+  atributo autocomplete="'on' or 'of'"
+  placeholder (deixa uma instrução)
+  autofocus: assim que entra na página, o cursor já fica no input que contem esse atributo
+  size="" / quantos caracteres podem ser inseridos no input
+  maxlength="" / máximo de caracteres que podem ser inseridos no input
+  minlength="" / mínimo de caracteres que podem ser inseridos no input
+
+  variações de "text":
+  -email
+  -password
+  -color
+  -date (data)
+  -datetime-local
+  -month
+  -number (só pode digitar números)
+  -range
+  -search
+  -tell
+  -time
+  -url (só aceita url)
+  -week
+  <input type="search" placeholder="search"> <!--para fazer pesquisa, já vem com o botão para apagar-->
+    <br>
+
+    <form>
+        <input type="email" placeholder="email">
+        <br>
+        <input type="url" placeholder="url">
+        <br>
+        <input type="tel" placeholder="telefone"> <!--em celular já abre o teclado numerico-->
+        <br>
+        <input type="number" placeholder="número">
+        <br>
+        <input type="range" min="1" max="100">
+        <br>
+        <input type="date">
+        <br>
+        <input type="month">
+        <br>
+        <input type="week">
+        <br>
+        <input type="time">
+        <br>
+        <input type="datetime-local">
+        <br>
+        <input type="color">
+        <br>
+        <input type="submit">
+    </form>
+
+  <select name="" size="2" multiple>
+    <option value="Qaundo coloca algo no value do option, o servidor recebe o value declarado e o cliente vê o qu está entre as tags">A</option>
+    <option value="Qaundo coloca algo no value do option, o servidor recebe o value declarado e o cliente vê o qu está entre as tags"
+    selected>B</option>
+  </select>
+  (vai dentro do form e requer um name)
+  (selected: o que estiver com isso, já vem pré selecionado)
+  (name="" size="2" multiple: 
+  size)quantos podem ser selecionados
+  multiple: quer dizer q pode ser selecionado mais de 1 {múltipla escolha} )
+
+  <textarea name="" id="" cols="30" rows="10"></textarea>
+  (Não é indicado usar o cols="" rows="", pois cada navegador pode interpretar de uma maneira os tamanhos de linhas e colunas)
+
+  <button>Texto do própio botão</button> (button dentro do form tem a mesma função que o submit, mas o button pode ser usado fora do form, já o submit não)
+
+  <label for="quando preenche o 'for' ele se refere ao id do input que vai ser usado">quando o label e o id estão em sintonia, eu posso clicar no texto para habilitar a caixa</label>
+
+  o label pode ser usado de duas maneiras:
+  1.
+  <label for="teste">Texto</label>
+  <input type="text" id="teste">
+  2.
+  <label for="teste">
+    Texto
+    <input type="text" id="teste">
+  </label>
+
+fieldset: É usada para agrupar elementos de um fomulário
+legend: É usada para dar uma legenda para o fieldset
+<form action="">
+  <fieldset>
+    <legend></legend>
+      <label for="">
+        <input type="text" name="" id="">
+        <input type="text" name="" id="">
+      </label>
+    </fieldset>
+</form>
+
+<input type="hidden" name="" value=""> (serve para receber dados q não precisa ser perguntatodo mas tem que vir no forms)
+ 
+<input type="file" name="" accept="">(receber arquivos) (para aceitar multiplos arquivos: multiple)
+SEMPRE Q TIVER 'file' no forms, tem q ter essa propriedade:
+<form action="" enctype="multipart/form-data"></form>
+
+validações nativas:
+required(deixa o input obrigatorio)
+minlength="mínimo de caracteres"
+maxlength="máximo de caracteres"
+-em inputs de número:
+ step="ele seleciona de ex.2 em 2"
+ min="menor número aceito"
+ max="maior número aceito"
+-em datas:
+ min="menor data aceita"
+ max="maior data aceita"
+-padrão para serem aceitos
+ pattern="padrão pré-prontas"
+
+&nbsp;coloca espaço
+para colocar caracteres reservados, temos que representar com comandos específicos
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+citações
+<blockquote cite="www...">
+  citação
+</blockquote>
+
+<cite></cite>
+
+<q></q>
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+para colocar códigos:
+<pre>
+  <code>
+    
+  </code>
+</pre>
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Imagens responsivas: picture e source
+<picture>
+  <source media="(min-width: )" srcset="">
+  <source media="(min-width: )" srcset="">
+  <img src="" alt="">
+</picture>
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
