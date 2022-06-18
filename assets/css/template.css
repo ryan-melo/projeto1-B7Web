@@ -400,7 +400,11 @@ footer .widget-tittle-text {
         flex-direction: column;
     }
 
-    article,
+    article {
+        margin-left: 20px;
+    }
+
+    section,
     aside {
         padding: 20px;
     }
