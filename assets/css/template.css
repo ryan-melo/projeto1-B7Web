@@ -292,7 +292,7 @@ article {
     margin-right: 20px;
 }
 
-article:hover {
+.animation:hover {
     box-shadow: 0 0 15px rgba(229, 229, 229, 0.997), 0 0 15px rgba(229, 229, 229, 0.997);
     /* background-color: rgba(229, 229, 229, 0.299); */
     /* border-radius: 20px; */
