@@ -463,3 +463,10 @@ footer .widget-tittle-text {
         height: 110px;
     }
 }
+
+@media (max-width:310px) {
+    .div-deparments {
+        width: 90px;
+        height: 90px;
+    }
+}
