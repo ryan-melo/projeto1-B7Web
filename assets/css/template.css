@@ -18,9 +18,11 @@ header {
     display: flex;
     justify-content: space-between;
     width: 990px;
+    overflow-x: hidden;
 }
 
-.logo {display: flex;
+.logo {
+    display: flex;
     align-items: center;
 }
 
@@ -36,7 +38,7 @@ nav li {
     padding: 0;
 }
 
-nav ul{
+nav ul {
     display: flex;
 }
 
@@ -147,7 +149,7 @@ ul#days {
     padding: 0;
 }
 
-ul#days li{
+ul#days li {
     display: flex;
     justify-content: space-between;
     list-style-type: none;
@@ -307,7 +309,9 @@ footer {
     flex: 1;
 }
 
-.fm1, .fm2, .fm3 {
+.fm1,
+.fm2,
+.fm3 {
     flex: 1;
     color: #FFF;
     padding: 20px;
@@ -351,4 +355,90 @@ footer .widget-tittle-text {
     color: #5c5c5c;
     font-size: 12px;
     margin-top: 30px;
+}
+
+.menuMobile {
+    display: none;
+    width: 40px;
+    height: 40px;
+    margin: 40px 20px 40px 0px;
+}
+
+.mm-line {
+    height: 4px;
+    background-color: #39aae1;
+}
+
+@media (max-width: 600px) {
+    .column {
+        height: 100%;
+    }
+
+    .banner-headline {
+        padding: 80px 0px 50px 20px;
+        margin-bottom: 50px;
+    }
+
+    .banner-headline h1 {
+        font-size: 50px;
+    }
+
+    .banner-headline h2 {
+        font-size: 17px;
+    }
+
+    .banner-options {
+        height: auto;
+        flex-direction: column;
+    }
+
+    #banner {
+        height: auto;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    article,
+    aside {
+        padding: 20px;
+    }
+
+    .footer-menu {
+        flex-direction: column;
+    }
+
+    .footer-area {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .footer-texts {
+        padding-left: 20px;
+    }
+
+    header .container {
+        flex-direction: row;
+    }
+
+    nav ul {
+        flex-direction: column;
+        display: none;
+    }
+
+    header {
+        height: auto;
+    }
+
+    .logo {
+        padding-left: 20px;
+    }
+
+    .menuMobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
 }
