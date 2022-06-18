@@ -450,3 +450,11 @@ footer .widget-tittle-text {
     }
 
 }
+
+
+@media (max-width:350px) {
+    .footer-texts {
+        padding: 10px;
+        font-size: 9px;
+    }
+}
