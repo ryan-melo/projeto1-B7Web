@@ -452,7 +452,7 @@ footer .widget-tittle-text {
 }
 
 
-@media (max-width:350px) {
+@media (max-width:380px) {
     .footer-texts {
         padding: 10px;
         font-size: 9px;
