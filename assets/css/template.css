@@ -404,7 +404,10 @@ footer .widget-tittle-text {
         margin-left: 20px;
     } */
 
-    section,
+    section {
+        padding: 10px;
+    }
+
     aside {
         padding: 20px;
     }
